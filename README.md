@@ -1,2 +1,2 @@
 # GUID-Hexadecimal-converter
-I created this GUID-HEXA converter for learning some cybersecurity stuffs.
+I created this GUID-HEX converter for learning some cybersecurity stuffs like how does the GPT work.
