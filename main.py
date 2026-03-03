@@ -20,16 +20,17 @@ def hex_to_guid(hex_bytes):
 
 def main():
     print("🔧 Entrez les 16 octets hexadécimaux du GUID GPT (ex: E3 C9 E3 16 5C 0B B8 4D 81 7D F9 2D F0 02 15 AE)")
-    user_input = input("👉 Octets hexadécimaux : ")
+    user_input = input("Octets hexadécimaux : ")
 
     # Nettoyage et conversion
     hex_strs = user_input.replace(',', ' ').split()
     try:
         hex_bytes = [int(h, 16) for h in hex_strs]
         guid = hex_to_guid(hex_bytes)
-        print(f"✅ GUID GPT : {guid}")
+        print(f"GUID GPT : {guid}")
     except ValueError as e:
-        print(f"❌ Erreur : {e}")
+        print(f" Erreur : {e}")
 
 if __name__ == "__main__":
     main()
+
